@@ -1,0 +1,220 @@
+ * {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      margin: 0;
+     }
+     body {
+       font-family: "outfit", sans-serif;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 1em;
+        color: rgb(51, 27, 0);
+        background-color: #fff4f2;
+        z-index: -4;
+        position: relative;
+    }
+section {
+    border-radius: 20px;
+    position: relative;
+    padding: 10px;
+    width: 80vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: #2909004d 0px 0px 20px;
+    background-color: #fdefea;
+    z-index: -3;
+}
+p:nth-child(1) {
+    font-size: 56px;
+    font-weight: bold;
+}
+p:nth-child(2) {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+p:nth-child(3) {
+  font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  .choco {
+    width: 80%;
+    height: auto;
+    border-radius: 10%;
+    margin: 10px 0;
+    transform: scale(1.1);
+    animation: choco 1s linear infinite;
+  }
+  .btn{
+  color: white;
+  font-size:16px;
+  font-weight: bold;
+  position: relative;
+  width: 150px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 0;
+  background-color: rgb(54, 29, 0);
+  border-radius: 20px;
+  cursor: pointer;
+}
+@property --deg{
+  syntax: '<angle>';
+  inherits: true;
+  initial-value: 0deg;
+}
+.btn::before,
+.btn::after{
+  content: "";
+  border-radius: 22px;
+  width: 103%;
+  height: 103%;
+  position: absolute;
+  background: conic-gradient(from var(--deg), #834a00, #fffbf6, #7c3c00, #ff9100);
+  z-index: -2;
+  animation: rotate 1.5s linear infinite;
+  animation-play-state: running;
+}
+.btn::after{
+  z-index: -1;
+  filter: blur(5px);
+} 
+@keyframes rotate {
+  to {
+    --deg: 360deg;
+  }  
+}
+.btn:hover::after{
+  filter: blur(10px);
+}
+.btn:hover::before,
+.btn:hover::after {
+  animation: rotate 2s linear infinite;
+ animation-play-state: running;
+}
+@keyframes choco {
+  0% {
+    transform: scale(1.1);
+    opacity: 0.9;
+  }
+  15% {
+    transform:  scale(1.15) rotate(-3deg);
+    opacity: 1;
+  }
+  30% {
+    transform:  scale(1.2) rotate(3deg);
+    opacity: 1;
+  }
+  45% {
+    transform:  scale(1.2) rotate(-3deg);
+    opacity: 1;
+  }
+  60% {
+    transform:  scale(1.2) rotate(3deg);
+    opacity: 1;
+  }
+  70% {
+    transform:  scale(1.21) ;
+    opacity: 1;}
+  80% {
+    transform:  scale(1.2) r;
+    opacit0y: 1;  
+  }
+  90% {
+    transform:  scale(1.15) ;
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.1) ;
+    opacity: 0.9;
+  }
+} 
+
+
+.ppupvideo{
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.modal {
+  position: fixed;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0,0.45);
+  z-index: 9999;
+  backdrop-filter: blur(3px);
+}
+.modal.show {
+  display: flex;
+}
+.modal-content {
+  background: #ffffff00;
+  border-radius: 12px;
+  width: min(92vw, 420px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+  transform: scale(.98);
+  animation: pop .1s ease-out forwards;
+  position: relative;
+}
+@keyframes pop {
+  to { transform: translateY(0) scale(1); }
+} 
+@media (max-width: 360px) {
+p:nth-child(2) {
+    font-size: 14px;
+}
+}
+@media (min-width: 361px) and (max-width: 415px) {
+p:nth-child(2) {
+    font-size: 15px;
+}
+}
+@media (min-width: 416px) and (max-width: 480px) {
+p:nth-child(2) {
+    font-size: 16px;  
+}
+}
+@media (min-width: 481px) and (max-width: 640px) {
+p:nth-child(2) {
+    font-size: 18px;  
+}
+}
+@media (min-width: 641px) and (max-width: 768px) {
+p:nth-child(2) {
+    font-size: 22px;  
+}
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+section {
+    width: 70%;
+}
+p:nth-child(2) {
+    font-size: 24px;  
+}
+}
+@media (min-width: 1025px) and (max-width: 1280px) {
+section {
+    width: 60%;
+}
+p:nth-child(2) {
+    font-size: 26px;  
+}
+}
+@media (min-width: 1281px) {
+section {
+    width: 50%;
+}
+p:nth-child(2) {
+    font-size: 28px;  
+}
+}
