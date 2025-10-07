@@ -169,21 +169,36 @@ p:nth-child(3) {
 @keyframes pop {
   to { transform: translateY(0) scale(1); }
 } 
-@media (max-width: 360px) {
-p:nth-child(2) {
+@media (max-width: 366px) {
+p:nth-child(1) {
+    font-size: 40px;}
+  p:nth-child(2) {
     font-size: 14px;
 }
+p:nth-child(3) {
+    font-size: 18px;  
+}}
+@media (min-width: 367px) and (max-width: 415px) {
+p:nth-child(1) {
+    font-size: 44px;
 }
-@media (min-width: 361px) and (max-width: 415px) {
-p:nth-child(2) {
+  p:nth-child(2) {
     font-size: 15px;
+}
+p:nth-child(3) {
+    font-size: 19px;  
 }
 }
 @media (min-width: 416px) and (max-width: 480px) {
+p:nth-child(1) {
+    font-size: 48px;  
+}  
 p:nth-child(2) {
     font-size: 16px;  
 }
-}
+p:nth-child(3) {
+    font-size: 20px;  
+}}
 @media (min-width: 481px) and (max-width: 640px) {
 p:nth-child(2) {
     font-size: 18px;  
@@ -198,6 +213,10 @@ p:nth-child(2) {
 section {
     width: 70%;
 }
+
+p:nth-child(1) {
+    font-size: 64px;  
+}
 p:nth-child(2) {
     font-size: 24px;  
 }
@@ -206,6 +225,9 @@ p:nth-child(2) {
 section {
     width: 60%;
 }
+p:nth-child(1) {
+    font-size: 68px;  
+}
 p:nth-child(2) {
     font-size: 26px;  
 }
@@ -213,6 +235,9 @@ p:nth-child(2) {
 @media (min-width: 1281px) {
 section {
     width: 50%;
+}
+p:nth-child(1) {
+    font-size: 70px;  
 }
 p:nth-child(2) {
     font-size: 28px;  
