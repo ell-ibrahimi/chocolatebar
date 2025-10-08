@@ -8,6 +8,8 @@ Temperature:  Keep between 15°C and 20°C (59–68°F).
 Humidity: Less than 50%. Moisture can make chocolate sticky or grainy.
 Light: Store away from direct sunlight — it fades color and affects flavor.
 Air: Keep it in a sealed container  (chocolate absorbs odors easily
+lol
 
 ## team members:
 Nabila 
+###islame zarouri
