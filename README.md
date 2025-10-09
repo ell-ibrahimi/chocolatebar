@@ -10,7 +10,7 @@ Light: Store away from direct sunlight — it fades color and affects flavor.
 Air: Keep it in a sealed container  (chocolate absorbs odors easily)
 
 ### team members:
-Chikhi Nabila 
+Chikhi Nabila  
 islame zarouri  
 benbrahim hossam  
 brahimi  
