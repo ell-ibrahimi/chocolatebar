@@ -16,3 +16,24 @@ benbrahim hossam
 brahimi  
 kechroud kawther
 Tchitcha lokmane
+
+## Chocolate Project – To-Do List
+
+###  Done
+-  Create GitHub repository  
+-  Design logo 
+-  Choose brand name **Chocolate**
+
+### In Progress
+-  Finalize packaging design  
+- Take product photos  
+-  Write product description  
+
+###  To Do
+-  Create brand color palette & font style guide  
+-  Design website landing page  
+-  Add nutrition info and barcode  
+-  Create Instagram page  
+-  Write README description for GitHub  
+-  Upload logo files and mockups  
+-  Make marketing plan
